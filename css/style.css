@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: dodgerblue;
+    text-align: center;
+    
+}
+
+nav{
+    background-color: lavender;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    text-align: left;
+    background-color: lightblue;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15;
+}
+
+nav a:hover{
+    background-color: blue;
+    color: black;
+}
+
+nav a.active{
+    background-color: cornflowerblue;
+    color: white;
+}
+
+main{
+    text-align: center;
+}
+
+.games{
+    background-color: cornflowerblue;
+}
+
+.aboutme{
+    background-color: cornflowerblue;
+}
+
+footer{
+    background-color: lavender;
+}
