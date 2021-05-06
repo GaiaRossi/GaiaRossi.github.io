@@ -5,7 +5,7 @@
   <!-- Meta info -->
   <meta charset="utf-8">
   <meta name="description" content="MadDex458's site">
-  <meta name="keywords" content="MadDex458,games,unity,c#,developer">
+  <meta name="keywords" content="MadDex458,developer">
   <meta name="author" content="MadDex458 aka Gaia Rossi">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,29 +30,26 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand">
         MadDex458
       </a>
-
       <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://twitter.com/MadDex458" style="float: right;" target="_blank"
-              rel="noopener noreferrer">
+
+          <li class="nav-item ml-2">
+            <a class="nav-link" href="https://twitter.com/MadDex458" target="_blank" rel="noopener noreferrer">
               <img src="images/twittericon.png" alt="Twitter's icon" width="18" height="18" />
             </a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.twitch.tv/maddex458" style="float: right;" target="_blank"
-              rel="noopener noreferrer">
+          <li class="nav-item ml-2">
+            <a class="nav-link" href="https://www.twitch.tv/maddex458" target="_blank" rel="noopener noreferrer">
               <img src="images/twitchicon.png" alt="Twitch's icon" width="18" height="18" />
             </a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/GaiaRossi" style="float: right;" target="_blank"
-              rel="noopener noreferrer">
+          <li class="nav-item ml-2">
+            <a class="nav-link" href="https://github.com/GaiaRossi" target="_blank" rel="noopener noreferrer">
               <img src="images/github.png" alt="Github's icon" width="18" height="18" />
             </a>
           </li>
@@ -64,17 +61,34 @@
     <div class="container-fluid">
       <div class="header">
         <div class="row justify-content-center">
-            <h1 class="welcome">Gaia Rossi</h1>
+          <h1 class="welcome">Gaia Rossi</h1>
+        </div>
+        <div class="row justify-content-center subtitle">
+          <h4>Developer</h4>
+        </div>
+        <div class="about-links">
+          <div class="projects">
+            <div class="card">
+              Would you like to know more about my projects?</br>
+              <a href="projects.html" class="know-more">My projects</a>
+            </div>
           </div>
-          <div class="row justify-content-center subtitle">
-            <h4>Developer</h4>
+          <div class="about-me">
+            <div class="card">
+              Would you like to know more about me?</br>
+              <a href="story.html" class="know-more">About me</a>
+            </div>
           </div>
+        </div>
+        <!--
           <div class="banner">
             <div class="dots"></div>
           </div>
-        </div>
+          -->
+
       </div>
-      
+    </div>
+
     </div>
   </main>
   <footer>
@@ -82,6 +96,7 @@
   </footer>
 </body>
 
+<!--
 <script type="application/javascript">
 
   $(document).ready(function(){
@@ -97,10 +112,12 @@
       var string = "values";
       string = string.replace("value", index * 0.05);
       $(this).css("animation-delay", string);
+      $(this).css();
     });
 
   });
 
 </script>
+-->
 
 </html>
