@@ -9,9 +9,6 @@ body{
     background-color: #EEE;
 }
 
-section.info{
-    padding: 8%;
-}
 
 section.info section.photo{
     margin-top: 20%;
@@ -50,10 +47,13 @@ section.story{
     background-color: #AAA;
 }
 
+section.projects{
+    padding: 3%;
+    background-color: #EEE;
+}
+
 section.education{
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
+    padding: 3%;    
     background-color: #CCC;
 }
 
@@ -64,6 +64,7 @@ section h2{
 section.links ul.network-links{
     display: block;
     text-align: center;
+    margin-bottom: 5%;
 }
 
 section.links ul.network-links li{
@@ -76,6 +77,18 @@ section.links ul.network-links li img{
     height: 40px;
 }
 
-section.education table{
-    border: none !important;
+section table td.important-info{
+    font-weight: bold;
+    font-size: 18px;
 }
+
+section.projects-item img{
+    float: right;
+    margin-right: 10%;
+}
+
+section.projects-item a{
+    color: darkblue;
+    font-size: 20px;
+}
+

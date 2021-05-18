@@ -29,7 +29,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand ml-2">
         Gaia Rossi
       </a>
@@ -37,7 +37,7 @@
         <ul class="navbar-nav ml-auto">
 
           <li class="nav-item ml-2">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
 
           <li class="nav-item ml-2">
@@ -45,7 +45,7 @@
           </li>
 
           <li class="nav-item ml-2">
-            <a class="nav-link disabled" href="#">Projects</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
         </ul>
       </section>
@@ -53,7 +53,7 @@
   </header>
   <main>
     <section class="container-fluid">
-      <section class="row story">
+      <section class="row story" id="home">
         <section class="col info">
           <section class="photo">
             <img src="images/foto_profilo_old_cut.jpg" />
@@ -93,26 +93,25 @@
         </section>
 
 
-        <section class="col-8 biography">
-          <section class="col">
-            <h2>Biography</h2>
-            <p>
-              I am a CS student at Univeristy of Ferrara, graduating in October 2021.<br>
-              I graduated at high school in 2018 as a computer expert.
-              <br>
-              <br>
-              My main interests are in Python automation, with some expirence on Telegram
-              bots and web scraping.
-              <br>
-              I am also interested in Web developing, with some knowledge in PHP, JavaScript
-              and the Laravel Framework.
-              <br>
-              <br>
-              I am currently working with my University in an IoT system that requires
-              an application, written in Python, that can move a robotic arm with the help
-              of accelerometers and sensors.
-            </p>
-          </section>
+        <section class="col biography">
+
+          <h2>Biography</h2>
+          <p>
+            I am a CS student at Univeristy of Ferrara, graduating in October 2021.<br>
+            I graduated at high school in 2018 as a computer expert.
+            <br>
+            <br>
+            My main interests are in Python automation, with some expirence on Telegram
+            bots and web scraping.
+            <br>
+            I am also interested in Web developing, with some knowledge in PHP, JavaScript
+            and the Laravel Framework.
+            <br>
+            <br>
+            I am currently working with my University in an IoT system that requires
+            an application, written in Python, that can move a robotic arm with the help
+            of accelerometers and sensors.
+          </p>
         </section>
       </section>
 
@@ -128,17 +127,98 @@
             </thead>
             <tbody>
               <tr>
-                <td>2018 - Present</td>
-                <td>Università degli Studi di Ferrara</td>
+                <td class="important-info">2018 - Present</td>
+                <td>
+                  <table style="width: 100%;">
+                    <tr>
+                      <td class="important-info">
+                        Università degli Studi di Ferrara, previsione di laurea: Ottobre 2021
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        Lode nei corsi di:
+                        <ul>
+                          <li>
+                            sistemi operativi
+                          </li>
+                          <li>
+                            ingegneria del software
+                          </li>
+                          <li>
+                            tecnologie web
+                          </li>
+                        </ul>
+                        Tesi: Soluzione IoT per l'attuazione remota di un braccio robotico tramite sensore inerziale
+                      </td>
+                    </tr>
+                  </table>
+                </td>
               </tr>
               <tr>
-                <td>2013 - 2018</td>
-                <td>Istituito di Istruzione Superiore Primo Levi</td>
+                <td class="important-info">2013 - 2018</td>
+                <td>
+                  <table>
+                    <tr>
+                      <td class="important-info">
+                        Istituto di Istruzione Superiore Primo Levi
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        Corso extracurriculare di AutoCAD 3D
+                        <br>
+                        Voto di uscita: 98/100
+                      </td>
+                    </tr>
+                  </table>
+                </td>
               </tr>
             </tbody>
           </table>
         </section>
       </section>
+
+      <section class="row projects" id="projects">
+        <section class="col">
+          <h2>Projects</h2>
+
+          <section class="projects-item">
+            <section class="row mt-5">
+              <section class="col">
+                <a href="https://github.com/EnricoBreg/GRAFICA-COMPUTERIZZATA">Rubik Cube with OpenGL</a>
+                <p style="color: gray;">
+                  Special thanks to Enrico Bregoli for helping me in this project :)
+                </p>
+              </section>
+              <section class="col">
+                <img src="./images/projects/rubik_cube.png" class="img-fluid" width="300px" height="300px">
+              </section>
+            </section>
+
+            <section class="row mt-5">
+              <section class="col">
+                <a href="https://github.com/GaiaRossi/industrial">Work diary: Industrial</a>
+              </section>
+              <section class="col">
+                <img src="./images/projects/industrial.png" class="img-fluid" width="300px" height="300px">
+              </section>
+            </section>
+
+            <section class="row mt-5">
+              <section class="col">
+                <a href="https://github.com/GaiaRossi/Breakout-Pygame">Breakout Game in Python</a>
+              </section>
+              <section class="col">
+                <img src="./images/projects/breakout.png" class="img-fluid" width="300px" height="300px">
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
 
     </section>
     </section>
