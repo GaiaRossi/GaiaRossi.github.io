@@ -4,9 +4,9 @@
 <head>
   <!-- Meta info -->
   <meta charset="utf-8">
-  <meta name="description" content="MadDex458's site">
-  <meta name="keywords" content="MadDex458,developer">
-  <meta name="author" content="MadDex458 aka Gaia Rossi">
+  <meta name="description" content="Gaia Rossi's site">
+  <meta name="keywords" content="developer">
+  <meta name="author" content="Gaia Rossi">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Link references -->
@@ -24,100 +24,128 @@
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
 
-  <title>MadDex458 Dev</title>
+  <title>Gaia Rossi Dev</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand">
-        MadDex458
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand ml-2">
+        Gaia Rossi
       </a>
-      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <section class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
 
           <li class="nav-item ml-2">
-            <a class="nav-link" href="https://twitter.com/MadDex458" target="_blank" rel="noopener noreferrer">
-              <img src="images/twittericon.png" alt="Twitter's icon" width="18" height="18" />
-            </a>
+            <a class="nav-link" href="#">Home</a>
           </li>
 
           <li class="nav-item ml-2">
-            <a class="nav-link" href="https://www.twitch.tv/maddex458" target="_blank" rel="noopener noreferrer">
-              <img src="images/twitchicon.png" alt="Twitch's icon" width="18" height="18" />
-            </a>
+            <a class="nav-link" href="#education">Education</a>
           </li>
 
           <li class="nav-item ml-2">
-            <a class="nav-link" href="https://github.com/GaiaRossi" target="_blank" rel="noopener noreferrer">
-              <img src="images/github.png" alt="Github's icon" width="18" height="18" />
-            </a>
+            <a class="nav-link disabled" href="#">Projects</a>
           </li>
         </ul>
-      </div>
+      </section>
     </nav>
   </header>
   <main>
-    <div class="container-fluid">
-      <div class="header">
-        <div class="row justify-content-center">
-          <h1 class="welcome">Gaia Rossi</h1>
-        </div>
-        <div class="row justify-content-center subtitle">
-          <h4>Developer</h4>
-        </div>
-        <div class="about-links">
-          <div class="projects">
-            <div class="card">
-              Would you like to know more about my projects?</br>
-              <a href="projects.html" class="know-more">My projects</a>
-            </div>
-          </div>
-          <div class="about-me">
-            <div class="card">
-              Would you like to know more about me?</br>
-              <a href="story.html" class="know-more">About me</a>
-            </div>
-          </div>
-        </div>
-        <!--
-          <div class="banner">
-            <div class="dots"></div>
-          </div>
-          -->
+    <section class="container-fluid">
+      <section class="row story">
+        <section class="col info">
+          <section class="photo">
+            <img src="images/foto_profilo_old_cut.jpg" />
+          </section>
+          <p>Gaia Rossi</p>
+          <p class="subtitle">
+            CS student
+          </p>
+          <section class="links">
+            <ul class="network-links">
+              <li>
+                <a href="https://twitter.com/MadDex458" target="_blank" rel="noopener noreferrer">
+                  <img src="images/twittericon.png" alt="Twitter's icon" />
+                </a>
+              </li>
 
-      </div>
-    </div>
+              <li>
+                <a href="https://www.twitch.tv/maddex458" target="_blank" rel="noopener noreferrer">
+                  <img src="images/twitchicon.png" alt="Twitch's icon" />
+                </a>
+              </li>
 
-    </div>
+              <li>
+                <a href="https://github.com/GaiaRossi" target="_blank" rel="noopener noreferrer">
+                  <img src="images/github.png" alt="Github's icon" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com/in/gaia-rossi-b4223420b" target="_blank" rel="noopener noreferrer">
+                  <img src="images/linkedin_icon.png" alt="LinkedIn's icon" />
+                </a>
+              </li>
+
+            </ul>
+          </section>
+        </section>
+
+
+        <section class="col-8 biography">
+          <section class="col">
+            <h2>Biography</h2>
+            <p>
+              I am a CS student at Univeristy of Ferrara, graduating in October 2021.<br>
+              I graduated at high school in 2018 as a computer expert.
+              <br>
+              <br>
+              My main interests are in Python automation, with some expirence on Telegram
+              bots and web scraping.
+              <br>
+              I am also interested in Web developing, with some knowledge in PHP, JavaScript
+              and the Laravel Framework.
+              <br>
+              <br>
+              I am currently working with my University in an IoT system that requires
+              an application, written in Python, that can move a robotic arm with the help
+              of accelerometers and sensors.
+            </p>
+          </section>
+        </section>
+      </section>
+
+      <section class="row education" id="education">
+        <section class="col">
+          <h2>Education</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Period</th>
+                <th scope="col">School</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2018 - Present</td>
+                <td>Università degli Studi di Ferrara</td>
+              </tr>
+              <tr>
+                <td>2013 - 2018</td>
+                <td>Istituito di Istruzione Superiore Primo Levi</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+
+    </section>
+    </section>
   </main>
   <footer>
 
   </footer>
 </body>
-
-<!--
-<script type="application/javascript">
-
-  $(document).ready(function(){
-
-    var banner = $('.banner');
-    var dot = '<div class="dots"></div>';
-
-    for(var i = 0; i < 97; i++){
-      banner.append(dot);
-    }
-
-    $('.dots').each(function(index){
-      var string = "values";
-      string = string.replace("value", index * 0.05);
-      $(this).css("animation-delay", string);
-      $(this).css();
-    });
-
-  });
-
-</script>
--->
 
 </html>
