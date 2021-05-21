@@ -44,17 +44,17 @@ section.biography{
 }
 
 section.story{
-    background-color: #AAA;
+    background-color: #83A0A0;
 }
 
 section.projects{
     padding: 3%;
-    background-color: #EEE;
+    background-color: #ACD7EC;
 }
 
 section.education{
     padding: 3%;    
-    background-color: #CCC;
+    background-color: #D6EDFF;
 }
 
 section h2{
@@ -92,3 +92,31 @@ section.projects-item a{
     font-size: 20px;
 }
 
+input[type=text]{
+    width: 100%;
+}
+
+input[type=submit]{
+    width: 20%;
+    margin-left: 80%;
+}
+
+textarea{
+    width: 100%;
+    height: 150px;
+}
+
+section.contacts{
+    width: 100%;
+    background-color: #8B95C9;
+}
+
+section.contacts section.row{
+    margin-bottom: 1%;
+    margin-left: 25%;
+    width: 50%;
+}
+
+section.contacts h3{
+    text-align: center;
+}

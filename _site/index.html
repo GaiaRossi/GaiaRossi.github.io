@@ -132,25 +132,26 @@
                   <table style="width: 100%;">
                     <tr>
                       <td class="important-info">
-                        Università degli Studi di Ferrara, previsione di laurea: Ottobre 2021
+                        University of Ferrara, graduation forecast: October 2021
                       </td>
                     </tr>
 
                     <tr>
                       <td>
-                        Lode nei corsi di:
+                        Praise in the courses of:
                         <ul>
                           <li>
-                            sistemi operativi
+                            Operating system
                           </li>
                           <li>
-                            ingegneria del software
+                            Software Engineering
                           </li>
                           <li>
-                            tecnologie web
+                            Web Tecnologies
                           </li>
                         </ul>
-                        Tesi: Soluzione IoT per l'attuazione remota di un braccio robotico tramite sensore inerziale
+                        Dissertation thesis: IoT solution for remote actuation
+                        of robotic arm via inertial sensor.
                       </td>
                     </tr>
                   </table>
@@ -162,15 +163,15 @@
                   <table>
                     <tr>
                       <td class="important-info">
-                        Istituto di Istruzione Superiore Primo Levi
+                        Primo Levi high school
                       </td>
                     </tr>
 
                     <tr>
                       <td>
-                        Corso extracurriculare di AutoCAD 3D
+                        Extracurricular course of AutoCAD 3D
                         <br>
-                        Voto di uscita: 98/100
+                        Final mark: 98/100
                       </td>
                     </tr>
                   </table>
@@ -218,14 +219,68 @@
           </section>
         </section>
       </section>
-    </section>
 
+
+      <section class="row">
+        <section class="contacts">
+          <section class="col">
+            <h3>Contact me</h3>
+          </section>
+        </section>
+      </section>
+
+      <section class="row">
+        <section class="contacts">
+          <section class="col">
+            <form action="php/send_message.php" method="POST">
+              <section class="row">
+                <label for="fname">First name *:</label>
+                <input type="text" id="fname" name="fname" placeholder="Insert your first name here" required>
+              </section>
+              <section class="row">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Insert your last name here">
+              </section>
+              <section class="row">
+                <label for="subject">Subject *:</label>
+                <textarea id="subject" name="subject" placeholder="Insert the subject here" required>
+                </textarea>
+              </section>
+              <section class="row">
+                <input type="submit" id="send_message" value="Send">
+              </section>
+              <section class="row">
+                (*) Mandatory fields
+              </section>
+            </form>
+          </section>
+        </section>
+      </section>
+    </section>
     </section>
     </section>
   </main>
   <footer>
 
   </footer>
+
+  <script>
+    $(document).ready(function(){
+      $("#send_message").click(function(){
+        $.ajax({
+          url: "send_message.php",
+          type: "POST",
+          data: {
+            email: "test@email",
+            message: "test"
+          },
+          success: function(data){
+
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
