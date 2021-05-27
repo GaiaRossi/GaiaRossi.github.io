@@ -1,6 +1,7 @@
 html{
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -25,7 +26,7 @@ section.info section.photo img{
 }
 
 section.info p{
-    color: #333;
+    color: #EEE;
     font-size: 40px;
     text-align: center;
 }
@@ -34,31 +35,37 @@ section.info p.subtitle{
     color: #777;
     font-size: 20px;
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 section.biography{
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5%;
+    color: #EEE;
 }
 
 section.story{
-    background-color: #83A0A0;
-}
-
-section.projects{
-    padding: 3%;
-    background-color: #ACD7EC;
+    background-color: #03254c;
 }
 
 section.education{
     padding: 3%;    
-    background-color: #D6EDFF;
+    background-color: #124674;
 }
 
+section.education table{
+    color: #EEE;
+}
+
+section.projects{
+    padding: 3%;
+    background-color: #03254c;
+}
+
+
 section h2{
-    color: #333;
+    color: #EEE;
 }
 
 section.links ul.network-links{
@@ -73,8 +80,8 @@ section.links ul.network-links li{
 }
 
 section.links ul.network-links li img{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 section table td.important-info{
@@ -92,31 +99,6 @@ section.projects-item a{
     font-size: 20px;
 }
 
-input[type=text]{
-    width: 100%;
-}
-
-input[type=submit]{
-    width: 20%;
-    margin-left: 80%;
-}
-
-textarea{
-    width: 100%;
-    height: 150px;
-}
-
-section.contacts{
-    width: 100%;
-    background-color: #8B95C9;
-}
-
-section.contacts section.row{
-    margin-bottom: 1%;
-    margin-left: 25%;
-    width: 50%;
-}
-
-section.contacts h3{
-    text-align: center;
+section.projects a{
+    color: #EEE;
 }
